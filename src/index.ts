@@ -8,7 +8,8 @@ interface CRUD {
 class PersonaREST implements CRUD {
     create(o: object): void {
         throw new Error("Method not implemented.");
-    }    read(): object {
+    }
+    read(): object {
         throw new Error("Method not implemented.");
     }
     update(o: object): void {
