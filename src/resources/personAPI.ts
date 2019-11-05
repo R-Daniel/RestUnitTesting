@@ -9,7 +9,7 @@ export interface Person {
 
 }
 
-export default class PersonAPI extends REST_API<Person> {
+export class PersonAPI extends REST_API<Person> {
     mensaje: string
 
     saludar(){
