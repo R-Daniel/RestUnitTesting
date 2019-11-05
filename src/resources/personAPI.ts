@@ -4,6 +4,7 @@ export interface Person {
     name: string
     age: number
     mensaje: string
+    edad: number
 
 }
 
