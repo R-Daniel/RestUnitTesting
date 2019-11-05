@@ -1,9 +1,11 @@
 import { REST_API } from "./meta/rest";
 
 export interface Animal {
-    name: string
+    name: string;
+    specie: string;
+    legs: number;
+    wings: number;
+    real: boolean;
 }
 
-export default class AnimalAPI extends REST_API<Animal> {
-
-}
+export class AnimalAPI extends REST_API<Animal> {}
