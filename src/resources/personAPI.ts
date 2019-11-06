@@ -16,5 +16,8 @@ export class PersonAPI extends REST_API<Person> {
     };
     saludar(){
         return `Este es tu mensaje ${this.mensaje}`;
+    };
+    comer(comida:string):string {
+        return "";
     }
 }
