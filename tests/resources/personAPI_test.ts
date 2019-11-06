@@ -13,6 +13,9 @@ describe('Person Tests', ()=>{
         n++;
         console.log(`Case ${n}:`);
     });
+    afterEach(()=>{
+        console.log("Done!");
+    });
 
     it('saludar', ()=>{
         const mensaje = "Hola"
