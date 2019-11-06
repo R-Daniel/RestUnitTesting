@@ -9,21 +9,10 @@ export interface Person {
 
 }
 
-export default class PersonAPI extends REST_API<Person> {
+export class PersonAPI extends REST_API<Person> {
     mensaje: string
 
     saludar(){
-        console.log(`Este es tu mensaje ${this.mensaje}`) 
+        return `Este es tu mensaje ${this.mensaje}`;
     }
 }
-
-let main = () => 
-{
-    let persona= new PersonAPI()
-    persona.mensaje="Hola"
-    persona.saludar()
-
-
-
-}
-main()
