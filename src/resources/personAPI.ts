@@ -10,7 +10,7 @@ export interface Person {
 }
 
 export class PersonAPI extends REST_API<Person> {
-    mensaje: string
+    mensaje: string = "";
 
     saludar(){
         return `Este es tu mensaje ${this.mensaje}`;

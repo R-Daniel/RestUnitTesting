@@ -20,7 +20,7 @@ describe('Person Tests', ()=>{
         const personAPI = new PersonAPI();
         personAPI.mensaje = mensaje;
         const resultado = personAPI.saludar();
-        expect(resultado).toBe(mensaje);
+        expect(resultado).toBe(`Este es tu mensaje ${mensaje}`);
     })
 
 })
