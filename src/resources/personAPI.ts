@@ -6,7 +6,6 @@ export interface Person {
     mensaje: string
     edad: number
     dni: number
-
 }
 
 export class PersonAPI extends REST_API<Person> {
