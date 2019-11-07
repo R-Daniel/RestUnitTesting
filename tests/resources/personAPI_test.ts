@@ -6,16 +6,17 @@ describe('Person Tests', ()=>{
     beforeAll(()=>{
         console.log("Testing Person API!");
     });
-    afterAll(()=>{
-        console.log("Testing Finished!")
-    });
     beforeEach(()=>{
         n++;
         console.log(`Case ${n}:`);
     });
     afterEach(()=>{
-        console.log("Done!");
+        console.log("\tDone!");
     });
+    afterAll(()=>{
+        console.log("Testing Finished!")
+    });
+    
 
     it('saludar', ()=>{
         const mensaje = "Hola"
@@ -30,9 +31,11 @@ describe('Person Tests', ()=>{
         const comida = "Ají de Gallina";
         const personAPI = new PersonAPI();
         
-        spyOn(personAPI, "comer").and.callFake((comida:string) => {
-            return `Comí ${comida}!`;
-        });
+        spyOn(personAPI, "comer").and.callFake(
+            (comida:string) => {
+                return `Comí ${comida}!`;
+            }
+        );
 
         const resultado = personAPI.comer(comida);
         expect(resultado).toBe(`Comí ${comida}!`);
